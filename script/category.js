@@ -420,7 +420,7 @@ $(document).ready(function () {
         var t = ids[1];
         //DS1419
         var $item = $("<div class='prod_list_list'></div>");
-        var $item_pic = $("<div class='prod_list_pic'><a href='' title='" + name + "'><img name='picautozoom' src='pics/huixiu/" + cat + "/exp" + name + "." + t + "' border='0'/></a></div>");
+        var $item_pic = $("<div class='prod_list_pic'><a href='view.html?id=" + name + "&sub=" + scat + "&category=" + category + "&t=" + t + "' title='" + name + "'><img name='picautozoom' src='pics/huixiu/" + cat + "/exp" + name + "." + t + "' border='0'/></a></div>");
         var $item_name = $("<div class='prod_list_name'><a href='view.html?id=" + name + "&sub=" + scat + "&category=" + category + "&t=" + t + "' title='" + name + "'>" + name + "</a></div>");
         $item.append($item_pic);
         $item.append($item_name);
