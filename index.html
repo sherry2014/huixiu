@@ -11,7 +11,6 @@
   <script type="text/javascript" language="javascript" src="script/popup/jquery-1.4.3.min.js"></script>
   <script type="text/javascript" language="javascript" src="script/droppy.js"></script>
   <script type="text/javascript" language="javascript" src="script/thickbox.js"></script>
-  <script type="text/javascript" language="javascript" src="script/helper.js"></script>
   <script type="text/javascript" language="javascript" src="script/png.js"></script>
   <link rel="stylesheet" type="text/css" href="script/thickbox.css" />
   <link rel="stylesheet" type="text/css" href="script/popup/theme/jquery.ui.core.css" />
@@ -199,10 +198,6 @@
               <div class="list_bot"></div>
             </div>
             <div class="blankbar"></div>
-
-
-
-
           </div>
           <div id="MODBLK_458" class="mod_block mb_fqSKZxYh_block">
             <h3 class="blk_t">优惠活动</h3>
@@ -241,7 +236,6 @@
                 <li>
                   <a href="tencent://message/?uin=800015083&Menu=yes" target=blank><img src="http://wpa.qq.com/pa?p=4:800015083:4" align=absMiddle border=0>在线客服</a>
                 </li>
-
               </ul>
             </div>
             <div class="list_bot"></div>
@@ -251,7 +245,6 @@
         </div>
 
         <div id="right">
-
           <div id="MODBLK_414" class="mod_block mb_yn19Hbqc_block">
             <div class="com_con"></div>
             <div class="list_bot"></div>
@@ -286,11 +279,9 @@
           </div>
           <div id="MODBLK_445" class="mod_block mb_K5bZr4nE_block">
             <h3 class="blk_t">最新产品</h3>
-
             <div class="newprod">
               <div class="newprod_top"></div>
               <div class="newprod_con">
-                
                 <div class="pro_over">
                   <table class="media_grid" cellspacing="4" width="100%">
                     <tr>
@@ -380,10 +371,6 @@
 
                   </table>
                 </div>
-
-                
-                
-
               </div>
               <div class="list_bot"></div>
             </div>
@@ -442,60 +429,53 @@
       浙ICP备16036204号-1</div>
   </div>
 
-
-  <script type="text/javascript" language="javascript" src="script/picAutoZoom.js"></script>
   <script type="text/javascript">
-var topMenuNum = 0;
-$("#nav_k2hfwo li span").hover(
-	function(){
-		topMenuNum++;
-		$(this).attr("id","kindMenuHover"+topMenuNum);
-		$("#kindMenuHover" + topMenuNum + " > ul").show();
-		$(this).parent().addClass("hover");
-	},
-	function(){
-		$("#"+$(this).attr("id")+" > ul").hide();
-		$(this).attr("id","");
-		$(this).parent().removeClass("hover");
-	}
-);
-</script>
+    var topMenuNum = 0;
+    $("#nav_k2hfwo li span").hover(function(){
+		  topMenuNum++;
+		  $(this).attr("id","kindMenuHover"+topMenuNum);
+		  $("#kindMenuHover" + topMenuNum + " > ul").show();
+		  $(this).parent().addClass("hover");
+	  },function(){
+		  $("#"+$(this).attr("id")+" > ul").hide();
+		  $(this).attr("id","");
+		  $(this).parent().removeClass("hover");
+	  });
+  </script>
   <script type="text/javascript" language="javascript">
-/**
- * for menu-drop type
- */
-var type = "";
-if (type == 'click') {
-	$(function(){
-		$('#pro_type_8U0zzH li:has(ul)').click(function(event){
-	    	if (this == event.target) {
-	        	if ($(this).children().is(':hidden')) {
-	                $(this).css({background:'url(template/jjyp-100608-a2/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
-	                .children().show();
-	                
-	              	$(this).siblings().each(function (){
-	              		$(this).find("ul").hide();
-	              		if ($(this).children().is("ul")){
-	              			$(this).css({background:'url(template/jjyp-100608-a2/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
-	              	    }
-	              	});
-	            } else {
-	                $(this).css({background:'url(template/jjyp-100608-a2/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
-	                .find("ul").hide();
-	            }  
-	        }
-		}).css('cursor','pointer');
-	          
-	    $('#pro_type_8U0zzH li:has(ul)').css({background:'url(template/jjyp-100608-a2/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
-	        	
-	    $('#pro_type_8U0zzH li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
-	});
-} else {
- 	$("#pro_type_8U0zzH > ul").droppy();
-	$("#pro_type_8U0zzH ul ul li:last-child").css("border","0px");
-}
-</script>
-  <!-- 页脚【end】 -->
+    /**
+     * for menu-drop type
+     */
+    var type = "";
+    if (type == 'click') {
+      $(function(){
+        $('#pro_type_8U0zzH li:has(ul)').click(function(event){
+            if (this == event.target) {
+                if ($(this).children().is(':hidden')) {
+                      $(this).css({background:'url(template/jjyp-100608-a2/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+                      .children().show();
+                      
+                      $(this).siblings().each(function (){
+                        $(this).find("ul").hide();
+                        if ($(this).children().is("ul")){
+                          $(this).css({background:'url(template/jjyp-100608-a2/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+                          }
+                      });
+                  } else {
+                      $(this).css({background:'url(template/jjyp-100608-a2/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+                      .find("ul").hide();
+                  }  
+              }
+        }).css('cursor','pointer');
+                
+          $('#pro_type_8U0zzH li:has(ul)').css({background:'url(template/jjyp-100608-a2/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+                
+          $('#pro_type_8U0zzH li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
+      });
+    } else {
+      $("#pro_type_8U0zzH > ul").droppy();
+      $("#pro_type_8U0zzH ul ul li:last-child").css("border","0px");
+    }
+  </script>
 </body>
-
 </html>

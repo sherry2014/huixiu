@@ -413,11 +413,11 @@ $(document).ready(function () {
     }
     pics = categorys[cat];
 	$('.art_list_title').text(cat);
-    for (let i in pics) {
-        let id = pics[i];
-        let ids = id.split('.');
-        let name = ids[0];
-        let t = ids[1];
+    for (var i in pics) {
+        var id = pics[i];
+        var ids = id.split('.');
+        var name = ids[0];
+        var t = ids[1];
         //DS1419
         var $item = $("<div class='prod_list_list'></div>");
         var $item_pic = $("<div class='prod_list_pic'><a href='' title='" + name + "'><img name='picautozoom' src='pics/huixiu/" + cat + "/exp" + name + "." + t + "' border='0'/></a></div>");
